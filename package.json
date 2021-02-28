@@ -24,10 +24,9 @@
     "url-loader": "^4.1.1"
   },
   "scripts": {
-    "dev": "next",
-    "build": "npm run export",
+    "dev": "next dev",
+    "build": "next build && next export",
     "start": "next start",
-    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
-    "export": "next build && next export"
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
   }
 }
