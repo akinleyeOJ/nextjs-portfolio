@@ -25,8 +25,9 @@
   },
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "npm run export",
     "start": "next start",
+    "export": "next build && next export",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
   }
 }
